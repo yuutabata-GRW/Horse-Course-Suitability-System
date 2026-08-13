@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Eclipse
+.metadata/
+Servers/
+bin/
+.classpath
+.project
+.settings/
+
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Environment / Secrets
+.env
+.env.*
+
