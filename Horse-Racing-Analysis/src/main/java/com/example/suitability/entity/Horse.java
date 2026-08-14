@@ -9,10 +9,18 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
+@Table(uniqueConstraints = {
+		@UniqueConstraint(name = "uk_horse_name_birth_date",
+				columnNames = {"name", "birth_date"}
+				)
+			}
+		)
 @Getter
 @Setter
 public class Horse {
